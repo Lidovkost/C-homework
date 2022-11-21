@@ -2,15 +2,15 @@
 Console.Clear();
 Console.Write("Введите N ->");
 Int32 N = Convert.ToInt32(Console.ReadLine());
-Int32 count=1;
+Int32 count = 2;
 Console.Write("Все четные числа -> ");
-while(count<=N)
+while (count <= N)
 {
-    if(count%2==0)
+    if (count % 2 == 0)
     {
         Console.Write($"{count} ");
     }
-    count++;
+    count += 2;
 }
 Console.Write("End");
 // int[] numbers = new int[4];
