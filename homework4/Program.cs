@@ -4,7 +4,7 @@ Console.Write("Введите N ->");
 Int32 N = Convert.ToInt32(Console.ReadLine());
 Int32 count=1;
 Console.Write("Все четные числа -> ");
-while(count<N)
+while(count<=N)
 {
     if(count%2==0)
     {
@@ -13,3 +13,12 @@ while(count<N)
     count++;
 }
 Console.Write("End");
+// int[] numbers = new int[4];
+// numbers[0]=1;
+// numbers[1]=3;
+// numbers[2]=7;
+// numbers[3]=8;
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     Console.Write(numbers[i]);
+// }

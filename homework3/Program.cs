@@ -9,3 +9,4 @@ else
 {
 Console.WriteLine($"Число {number} не является четным");    
 }
+Console.Write(number);
