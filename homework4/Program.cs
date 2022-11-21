@@ -3,6 +3,7 @@ Console.Clear();
 Console.Write("Введите N ->");
 Int32 N = Convert.ToInt32(Console.ReadLine());
 Int32 count=1;
+Console.Write($"Все четные числа -> ");
 while(count<N)
 {
     if(count%2==0)
@@ -11,3 +12,4 @@ while(count<N)
     }
     count++;
 }
+Console.Write($"End");
