@@ -18,7 +18,7 @@ int DigitByPosition = FindDigitByPosition(number, 3);
 
     if(DigitByPosition == -1)
 {
-        Console.Write("такого числа нет");
+        Console.Write("В числе меньше трех цифр");
 }
     else
 {

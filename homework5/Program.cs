@@ -1,11 +1,15 @@
 ﻿//Напишите программу, которая принимает на вход трёхзначное число и
 // на выходе показывает вторую цифру этого числа.
 int number = 0;
-
+int prompt(string message)
+{
+    Console.Write($"Введите число в диапазоне 99<|{message}|<1000 ");
+    int answer = Convert.ToInt32(Console.ReadLine());
+    return answer;
+}
 while (number > 999 | number < 100)
 {
-    Console.Write("Введите трехзначное число ->");
-    number = Convert.ToInt32(Console.ReadLine());
+    number = prompt("трехзначное число");
     number = Math.Abs(number);
 }
 
