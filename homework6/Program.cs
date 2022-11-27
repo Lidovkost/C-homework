@@ -24,3 +24,8 @@ int DigitByPosition = FindDigitByPosition(number, 3);
 {
         Console.Write(DigitByPosition);
 }
+// int[] array = new int[0];
+// array[0]= 12;
+// array[1] = 16;
+// array[2]=190;
+// Console.Write(array[0]);
