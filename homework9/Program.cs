@@ -10,21 +10,15 @@ double prompt(string message)
     double answer = Convert.ToDouble(Console.ReadLine());
     return answer;
 }
-while (index < 3)
-{
-    if (index == 0) firstPoint[index] = prompt("Введите Х первой точки ");
-    if (index == 1) firstPoint[index] = prompt("Введите y первой точки ");
-    if (index == 2) firstPoint[index] = prompt("Введите z первой точки ");
-    index++;
-}
+
+firstPoint[index] = prompt("Введите Х первой точки ");
+firstPoint[index+1] = prompt("Введите y первой точки ");
+firstPoint[index+2] = prompt("Введите z первой точки ");
+    
 index = 0;
-while (index < 3)
-{
-    if (index == 0) secondPoint[index] = prompt("Введите Х второй точки ");
-    if (index == 1) secondPoint[index] = prompt("Введите y второй точки ");
-    if (index == 2) secondPoint[index] = prompt("Введите z второй точки ");
-    index++;
-}
+secondPoint[index] = prompt("Введите Х второй точки ");
+secondPoint[index+1] = prompt("Введите y второй точки ");
+secondPoint[index+2] = prompt("Введите z второй точки ");
 index = 0;
 while(index <3)
 {
