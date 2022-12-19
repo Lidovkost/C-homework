@@ -32,12 +32,12 @@ void FillSpirallyArray(int[,] matrix)
     int row = 0;
     int col = 0;
     while (number <= matrix.GetLongLength(0) * matrix.GetLongLength(1))
-    {    
+    {
         while (col < maxCol)
         {
             matrix[row, col] = number;
-            number= number +1;
-            col= col+1;
+            number = number + 1;
+            col = col + 1;
         }
         row = row + 1;
         col = col - 1;
@@ -61,15 +61,15 @@ void FillSpirallyArray(int[,] matrix)
         {
             matrix[row, col] = number;
             number = number + 1;
-            row=row-1;
+            row = row - 1;
         }
         row = row + 1;
         col = col + 1;
         maxRow = maxRow - 1;
         minRow = minRow + 1;
         minCol = minCol + 1;
-        maxCol = maxCol - 1;   
-    }        
+        maxCol = maxCol - 1;
+    }
 }
 int[,] matrix = CreateMatrix();
 FillSpirallyArray(matrix);
